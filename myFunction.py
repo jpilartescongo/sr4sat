@@ -1,4 +1,5 @@
 # supporting functions for sr implementation
+
 from osgeo import gdal
 from PIL import Image
 import numpy as np
@@ -43,7 +44,7 @@ def convert_image_format(input_path: str, output_path: str):
 
         # Save to desired format
         Image.fromarray(rgb).convert("RGB").save(output_path)
-        print(f"✅ Converted and saved: {output_path}")
+        print(f"Converted and saved: {output_path}")
 
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"Error: {e}")

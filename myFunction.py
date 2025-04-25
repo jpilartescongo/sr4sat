@@ -1,3 +1,5 @@
+# supporting functions for sr implementation
+
 from osgeo import gdal
 from PIL import Image
 
